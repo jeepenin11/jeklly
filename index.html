@@ -1,0 +1,18 @@
+---
+　　layout: deflt
+　title: 我的后宫
+　　---
+
+　　<h2>{{ page.title }}</h2>
+
+　　<p>汤博乐</p>
+
+　　<ul>
+
+	　　　　{% for ost in site.osts %}
+
+	　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.ul }}">{{ post.tile }}</a></li>
+
+	　　　　{% endfor %}
+
+	　　</ul>
